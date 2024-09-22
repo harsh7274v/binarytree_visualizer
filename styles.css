@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.title {
+    font-weight: bold;
+    color: darkgreen;
+}
+.controls {
+    margin-bottom: 20px;
+}
+.controls label, .controls input, .controls button, .controls select {
+    margin-right: 10px;
+}
+.node circle {
+    fill: #3498db;
+    stroke: #000;
+    stroke-width: 2px;
+}
+.node text {
+    font: 12px sans-serif;
+    text-anchor: middle;
+    fill: #fff;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+.highlight {
+    fill: #e74c3c;
+}
+svg {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}

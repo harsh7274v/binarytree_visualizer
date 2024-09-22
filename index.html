@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Interactive Tree Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="title">Interactive Tree Visualization</h2>
+
+    <!-- Controls for tree type and adding nodes -->
+    <div class="controls">
+        <label for="tree-type">Select Tree Type: </label>
+        <select id="tree-type">
+            <option value="heap">Heap (Max-Heap/Min-Heap)</option>
+            <option value="binary">Binary Tree</option>
+            <option value="bst">Binary Search Tree (BST)</option>
+        </select>
+
+        <label for="heap-type" id="heap-type-label">Select Heap Type: </label>
+        <select id="heap-type">
+            <option value="max">Max-Heap</option>
+            <option value="min">Min-Heap</option>
+        </select>
+
+        <label for="node-value">Enter Node Value: </label>
+        <input type="number" id="node-value" placeholder="Enter number">
+        <button onclick="addNode()">Add Node</button>
+        <button onclick="resetTree()">Reset</button>
+    </div>
+
+    <!-- SVG Container for visualization -->
+    <svg width="100%" height="600"></svg>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
